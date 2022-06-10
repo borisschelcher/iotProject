@@ -33,9 +33,7 @@ def blink_b():
     time.sleep(0.5)
 
 def blink_multicolor():
-    for i in 3:
         blink_r()
         blink_b()
         blink_r()
-        i=i+1
     

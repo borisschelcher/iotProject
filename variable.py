@@ -1,8 +1,8 @@
 from machine import Pin
 
 
-WIFI_SSID = 'Bbox-793ABA18'
-WIFI_PSSWD = 'v9AgebS3H1U515XNgy'
+WIFI_SSID = 'Livebox-3900'
+WIFI_PSSWD = 'EtPgsyznEFhhGRbL7Z'
 
 CLIENT_ID = 'ESP32'
 MQTT_BROKER_IP = '37.187.38.244'
@@ -15,7 +15,7 @@ LED_R_PIN = Pin(21,Pin.OUT)
 LED_G_PIN = Pin(23,Pin.OUT)
 LED_B_PIN = Pin(22,Pin.OUT)
 
-BUZZER_PIN = Pin(17)
+BUZZER_PIN = Pin(15)
 
 StartSong = ["E7", "E7",  "P","E7",  "P","C7", "E7",  "P",
      "G7",  "P", "P", "P","G6",  "P", "P", "P",
