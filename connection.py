@@ -6,14 +6,12 @@ from time import sleep
 from umqtt.simple import MQTTClient
 
 NumberToGuess = random.randint(1,100)
-print(NumberToGuess)
 
 station = network.WLAN(network.STA_IF)
 station.active(True)
 station.connect(variable.WIFI_SSID, variable.WIFI_PSSWD)
 while not station.isconnected():
     sleep(1)
-    print("test")
 music.play('Start')
 
 def publish(topic, message):
@@ -21,8 +19,6 @@ def publish(topic, message):
     client.publish(topic=topic, msg=jsMsg)
 
 def sub_callback(topic, msg):
-    print((topic, msg))
-    print(msg)
     if NumberToGuess==int(msg):
         music.play('Win')
         return 0
